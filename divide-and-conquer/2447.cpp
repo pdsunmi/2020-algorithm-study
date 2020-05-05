@@ -37,7 +37,7 @@ int main()
 				v[i][j] = '*';
 		}
 	}
-	for (i = 1;i < 8;i++)
+	for (i = 1; i < 8;i++)
 	{
 		int tmp = pow(3, i);
 		if (tmp == n)
@@ -45,7 +45,7 @@ int main()
 		else
 			v_copy(v, tmp);
 	}
-	for (i = 0;i < n;i++)
+	for (i = 0; i < n;i++)
 	{
 		for (j = 0; j < n; j++)
 			cout << v[i][j];
