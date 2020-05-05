@@ -37,7 +37,7 @@ int main()
 				v[i][j] = '*';
 		}
 	}
-	for (i=1;i<8;i++)
+	for (i = 1;i < 8;i++)
 	{
 		int tmp = pow(3, i);
 		if (tmp == n)
