@@ -3,7 +3,6 @@
 #include <vector>
 using namespace std;
 
-
 void v_copy(vector<vector<char>> &v, int n, int m)
 {
 	for (int i = 0; i < m; i++)
@@ -19,14 +18,14 @@ void v_copy(vector<vector<char>> &v, int n, int m)
 	}
 }
 
-
 int main()
 {
 	int n, i, j;
 	cin >> n;
 
 	vector<vector<char>> v(n, vector<char>(n*2-1, ' '));
-
+	
+	// sample
 	for (i = 0; i < 3; i++)
 	{
 		v[0][n-1] = '*';
@@ -38,6 +37,7 @@ int main()
 		}
 	}
 
+	// copy
 	int m = 3;
 	for (i = 1; i <= 10; i++)
 	{
@@ -49,6 +49,8 @@ int main()
 			m *= 2;
 		}
 	}
+	
+	// print
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < 2*n-1; j++)
