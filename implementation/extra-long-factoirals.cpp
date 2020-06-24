@@ -1,10 +1,10 @@
+//https://www.hackerrank.com/challenges/extra-long-factorials/problem
 #include <iostream>
 
 using namespace std;
 
 int number[160];
-int carry;
-int pos;
+int carry, pos;
 
 void factorial(int n) {
 	// multiple
