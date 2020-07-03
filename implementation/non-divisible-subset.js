@@ -5,7 +5,7 @@ function nonDivisibleSubset(k, s) {
     mod.fill(0);
     
     // count input mod k
-    for(var i in s) {
+    for(let i in s) {
         mod[s[i]%k]++;
     }
     
@@ -14,7 +14,7 @@ function nonDivisibleSubset(k, s) {
     if(k%2===0&&mod[k/2]>0) result++;
 
     // count max(mod[i], mod[k-i])
-    for(var i=1; i<k/2;i++) {
+    for(let i=1; i<k/2;i++) {
         result+=Math.max(mod[i],mod[k-i]);
     }
     return result;
