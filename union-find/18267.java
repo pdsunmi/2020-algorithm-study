@@ -10,13 +10,14 @@ import java.util.StringTokenizer;
  *  18267. Milk Visits
  *  두 지점 사이에 선호하는 우유를 마실 수 있는지 묻는 문제였다.
  *  주어진 정점의 경로에 G 혹은 H가 존재하는지 판단해야하는데 BFS로 접근했다가 시간초과가 발생했다
+ *
  *  H끼리 집합을 묶고 G끼리 근처의 집합을 묶은 후 쿼리를 판단할때 다른집합이면 둘다 존재하므로 1을 출력한다
  *  다른 집합이면 시작점의 종류를 확인하고 맞게 출력하면 된다.
  *  집합을 묶는 과정은 인접리스트로 저장 후 DFS를 수행하였다. (굳이 Union할필요는 없음)
  *  
  *  결론은 Disjoint sets!
  */
-public class Milk {
+public class Milk_Visits {
 	static List<Integer>[] adj;
 	static int[] parent;
 	static char[] milk;
