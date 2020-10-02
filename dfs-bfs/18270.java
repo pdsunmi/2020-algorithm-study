@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  *  순서대로 연결된 간선이 0개 이면 출력, 2개이면 가운데에 위치하므로 패스, 1개이면 dfs를 수행한다.
  *  dfs로 연결된 이름들을 모두 출력하고 이어간다.
  */
-public class Milk {
+public class Livestock_Lineup {
 	static String[] names = { "Beatrice", "Belinda", "Bella", "Bessie", "Betsy", "Blue", "Buttercup", "Sue" };
 	static List<Integer>[] adj;
 	static StringBuilder sb;
