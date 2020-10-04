@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  *  20005. 보스몬스터 전리품
  *  https://www.acmicpc.net/problem/20005
  *  보스와 플레이어 간의 거리를 구할 때 보스부터 출발하여 bfs를 하면 한번에 계산이 가능하다.
- *  HashMap을 잘 활용해서 입력값에 맞게 활용하자.
+ *  HashMap을 입력값에 맞게 잘 활용하자.
  *  isEmpty나 long 등 런타임에러가 날 부분이 없는지 검토하자.
  */
 public class Main {
